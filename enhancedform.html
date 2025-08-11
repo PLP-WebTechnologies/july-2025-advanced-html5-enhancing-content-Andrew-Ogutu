@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form Example</title>
+</head>
+<body>
+
+  <header>
+    <h1>Registration for Tech Conference 2025</h1>
+    <p>Fill out the form below to register for the upcoming tech event.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Event Highlights</h2>
+      <ul>
+        <li>Keynote speeches from industry leaders</li>
+        <li>Workshops and hands-on sessions</li>
+        <li>Networking opportunities</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Schedule Overview</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day 1</td>
+            <td>Opening Ceremony</td>
+            <td>9:00 AM</td>
+          </tr>
+          <tr>
+            <td>Day 2</td>
+            <td>Workshops</td>
+            <td>10:00 AM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Day 3</td>
+            <td>Closing Keynote</td>
+            <td>3:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Preview</h2>
+      <img src="https://via.placeholder.com/300x200" alt="Conference Hall">
+      <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <article>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="POST" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required><br><br>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="0712345678" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Event Preferences</legend>
+
+          <label for="track">Select Track:</label>
+          <select id="track" name="track" required>
+            <option value="">--Choose one--</option>
+            <option value="dev">Developer</option>
+            <option value="design">Designer</option>
+            <option value="manager">Manager</option>
+          </select><br><br>
+
+          <label>Workshops:</label><br>
+          <input type="checkbox" id="ai" name="workshops" value="ai">
+          <label for="ai">AI & ML</label><br>
+
+          <input type="checkbox" id="web" name="workshops" value="web">
+          <label for="web">Web Development</label><br>
+
+          <input type="checkbox" id="cloud" name="workshops" value="cloud">
+          <label for="cloud">Cloud Computing</label><br><br>
+
+          <label>Gender:</label><br>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label><br>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label><br><br>
+
+          <label for="comments">Additional Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your message..."></textarea><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Login Info</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required autocomplete="username"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required autocomplete="new-password"><br><br>
+
+          <label for="readonly">Referral Code (readonly):</label>
+          <input type="text" id="readonly" name="referral" value="CONF2025" readonly><br><br>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tech Conference. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
